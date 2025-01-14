@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(82, 76, 68);
+}
+h1 {
+  color: rgb(0, 150, 244);
+}
+h2 {
+  color: rgb(0, 150, 244);
+}
+p {
+  color: rgb(255, 255, 255);
+}
+ul,
+ol {
+  color: rgb(0, 0, 0);
+}
+span {
+  color: rgb(255, 255, 255);
+}
+a {
+  color: red;
+}
+b {
+  color: yellow;
+}
+i {
+  color: black;
+}
+.line1 {
+    background-color: rgb(245, 172, 15);
+}
+.line2 {
+  background-color: rgb(255, 242, 204);
+}
+.line3{
+    background-color: rgb(213, 232, 212);
+}
