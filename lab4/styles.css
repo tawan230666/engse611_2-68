@@ -24,94 +24,142 @@
   }
 
 body{
-
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h2{
-
+    font-size: 48px;
+    font-weight: 900;
 }
 
 h3{
-
+    font-size: 36px;
+    font-weight: 900;
 }
 
 nav{
-
+    /* background-color: var(--darkblue); */
+    background-color: white;
+    height: 80px;
 }
 
 .container{
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
 }
 
 .navbar .container{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%;
 }
 
 .navbar .img{
-
+    height: 80px;
 }
 
 .navbar .logo{
-
+    font-size: 24px;
+    color: var(--logo-hero-color);
 }
 
 .navbar ul{
-
+    display: flex;
+    gap: 20px;
+    font-size: var(--secondarytxt-size);
+    list-style: none;
 }
 
 .navbar ul a{
-
+    /* color: var(--secondarytxt-color); */
+    color: black;
+    text-decoration: none;
 }
 
 .hero{
-
+    display: flex;
+    min-height: var(--sectionheight);
+    background-color: var(--darkblue);
 }
 
 .hero .container{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .hero h2{
-
+    line-height: 1.2;
+    color: var(--logo-hero-color);
 }
 
 .hero p{
-
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--secondarytxt-color);
+    font-size: var(--secondarytxt-size);
 }
 
 .hero .hero-bold-text{
-
+    font-weight: bold;
+    color: var(--accent-color);
 }
 
 .hero img{
-
+    max-width: 400px;
+    padding: 0px 0px 0px 125px;
 }
 
 .hero .hero-button{
     display: block;
-
+    padding: 10px 45px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    font-size: var(--secondarytxt-size);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    margin-top: 15px;
 }
 
 .hero .hero-button:hover{
-
+    background-color: #3374dd;
+    cursor: pointer;
 }
 
 .info{
-
+    /* min-height: var(--sectionheight); */
+    height: var(--sectionheight);
 }
 
 .info .container{
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    min-height: 100%;
+    justify-content: center;
 }
 
 .info .info-header{
-
+    margin-top: 40px;
+    text-align: center;
 }
 
 .info .boxes{
     display: flex;
-
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
 }
 
 .info .box{
@@ -119,72 +167,117 @@ nav{
 }
 
 .info img{
-
+    border: #3882F6;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 20px;
+    aspect-ratio: 1 / 1;
 }
 
 .info .box h3{
-
+    color: var(--darkblue);
 }
 
 .info .box p{
-   
+    margin-top: 8px;
+    white-space: nowrap;
 }
 
 .quote{
     display: flex;
-
+    align-items: center;
+    justify-content: center;
+    height: var(--sectionheight);
+    background-color: #E5E7EB;
+    flex: 1;
+    padding: 75px;
 }
 
 .quote .container{
     display: flex;
-
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100%;
+    max-width: 900px;
 }
 
 .quote h3{
- 
+    font-family: 'Roboto', sans-serif;
+    font-style:italic;
+    font-weight: 300;
 }
 
 .quote .quote-attribution{
-    
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 15px;
 }
 
 .CTA{
-
+    height: var(--sectionheight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .CTA .container{
     display: flex;
-
+    background-color: var(--accent-color);
+    padding: 60px;
+    border-radius: 10px;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .CTA .CTA-main-text{
-
+    font-size: 24px;
+    color: var(--logo-hero-color);
+    font-weight: 600;
 }
 
 .CTA .CTA-secondary-text{
- 
+    margin-top: 5px;
+    font-size: var(--secondarytxt-size);
+    color: var(--secondarytxt-color);
     
 }
 
 .CTA .CTA-button{
-
+    padding: 10px 45px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    font-size: var(--secondarytxt-size);
+    color: #fff;
+    font-weight: 700;
+    border: solid 2px;
+    margin-top: 15px;
+    flex-shrink: 0;
 }
 
 .CTA .CTA-button:hover{
- 
+    background-color: #3374dd;
+    cursor: pointer;
 }
 
 .footer{
-
+    height: 85px;
+    background-color: var(--darkblue);
+    margin-top: auto;
 }
 
 .footer .container{
     display: flex;
-  
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
 }
 
 .footer a{
-    
+    color: #DABE1F;
+    padding-right: 3px;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .nerd{
